@@ -1,0 +1,28 @@
+\chapter{INTRODUCTION}
+
+\section{Bib\TeX\ Style File}
+
+The default bibliography format is provided by the Bib\TeX\ style file \verb#ieeetr.bst#. If you want to use different bibliography format, change the style file on the line 7 in \verb#thesis.cls# file. You can find other Bib\TeX\ style files under \verb#tex/texmf/bibtex/bst# directory. I decide not to include the absolute path because the school may decide to re-install \TeX\ on a different directory. However, you can easily find the \TeX\ directory by looking at the \verb#log# file which shows the absolute path of the loaded class and package(s). View \verb#references.bib# file for citation format. If you have to enter the reference information manually, Emacs is a good program for the task. It has Bib\TeX\ template and it can sort the reference entries by author's name. An easier way is to download the references, and MathSciNet (\verb#http://www.ams.org/mathscinet#) is a great place to acquire citation in Bib\TeX\ format. Finally, let's try a few citations \cite{ALBERTSETAL:1994,FERSHT:1985,FISCHER:1987a,KAUFFMAN:1969,MR1191182,MR1617060}.
+
+\section{Example Section With Figure}
+
+First, figure caption has to end with a period. Second, it is required that the figure and caption left-aligned. I couldn't get the style file to do it automatically. However, I find a workaround using \verb#minipage# environment. Look at the \verb#chapter.tex# file to see how it is done. Also, compare the \LaTeX\ code, the output of Figure \ref{fig:1} and how it shows up in the List of Figures to see the difference in the caption display. This can be achieved by using \verb#\caption[]{}# command. The same format also works with chapter, section, etc.
+
+
+\begin{figure}[htbp]
+\centering
+%\begin{minipage}{4.5in} %Note the size of the minipage has to be the same as the width of the figure in order for correct alignment.
+%\psfig{figure=msgcube.eps,width=4.5in} % Commented by Shoubhik Mondal, 2014
+\includegraphics[width=4.5in]{msgcube.eps}
+\caption[Caption appearing in List of Figure.]{MSG Cube\protect\footnote{MSG$^3$ is Mathematical Sciences Group's logo. Designed by HKT.}. A lot more text can go into caption without appearing on the List of Figures.}
+\label{fig:1} 
+%\end{minipage}
+\end{figure}
+
+\newpage
+\subsection{Example Subsection With Table}
+
+Here is an example of a table. Note that caption of table is in initial capital as section and subsection, and it doesn't end with a period as figure caption. Also, the caption is above the table.  You can achieve this by put \verb#\caption{}# command all the way on the top.  You might need to forcibly add space between the text and the table so that it doesn't appear too close to the text.  View \verb#table.tex# file for detail of the table.
+\vspace{4mm}
+
+\input{table}

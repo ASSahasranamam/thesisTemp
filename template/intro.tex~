@@ -1,0 +1,93 @@
+\chapter{INTRODUCTION}
+
+Tissue engineering is a relatively young field, yet one whose importance cannot be overstated.  
+There is a shortage of available organs for those in need of transplants \cite{curtis2001}, and the situation will worsen as the world's population continues to increase and age.  
+Many different tissue engineering protocols have been and continue to be researched to determine if it is possible to grow tissue to implant into a patient.  
+{\bf ***THE NEXT SENTENCE IS NEW***}
+A protocol for engineering tissue experiencing significant advances in research \cite{nytimes1,nytimes2,nytimes3} involves harvesting an individual's own cells, growing the specific type of tissue needed outside the body, and then re-implanting when the tissue is viable.  
+This method of {\it in vitro} tissue engineering using the patient's own tissue greatly reduces the risk of tissue rejection.  
+Conducting a large suite of experiments in which tissue is grown within the laboratory undoubtedly provides the best indicator of likely success; however, the time taken for tissue to grow, the ``trial and error" nature of optimizing the outcome, and the costly possibility of human or mechanical error in running the experiments makes this approach inefficient for testing purposes.  
+Mathematically modeling the growing tissue can be a useful way to augment such experimental programs as case studies can be simulated in only a fraction of the time that it takes actual tissue to grow, and once calibrated against experiments, models can be used to make predictions of optimal conditions for successful tissue growth.\\
+\\
+A commonly-used tissue engineering protocol is to place a porous {\it scaffold} that has been seeded with cells into a {\it bioreactor} filled with a nutrient-rich culture medium.  
+Scaffolds can have widely-varying properties, such as differing pore sizes and pore architectures, but they all serve the purpose of providing an apparatus on which cells can attach and proliferate over time.  
+The scaffold plus cells are collectively referred to as a tissue engineering {\it construct}.  
+Early mathematical models of tissue engineering saw the nutrient within the culture medium delivered to the cell-seeded scaffold via diffusion alone (in the absence of perfusion).  
+Malda {\it et al.} \cite{malda2004} measured (via experiments and modeling) the development of oxygen gradients in chondrogenesis due to oxygen consumption by the cells.  
+The goal was to predict oxygen levels within the construct to obtain an understanding of the relationship between local oxygen concentration and the oxygen demand by the cells.  
+In an extension of this work, Lewis {\it et al.} \cite{lewis2005} analyzed the relationship between nutrient concentration and cell density in one spatial dimension, while assuming no cellular movement within the scaffold.  
+They compared their model to experimental results, and showed that with proliferation, a diffusion dominated model will see growth in the outer region of the scaffold, where oxygen concentrations are highest, but less proliferation near the scaffold center where the limitations of diffusive transport means oxygen levels are low.\\
+\\
+One way in which nutrient may be better provided to the entire scaffold is via perfusion; that is, forced flow of nutrient-rich culture medium through the seeded scaffold.  
+As well as the enhanced nutrient delivery due to advection, the forced flow generates fluid shear stress within the scaffold, which can stimulate enhanced cell proliferation.  
+Certain cell types (e.g. osteoblasts) undergo enhanced proliferation when exposed to shear stress \cite{kapur2003, yeatts2011}.  
+Raimondi {\it et al.} \cite{raimondi2004} experimentally compared a static culture system, a surface perfused culture system (where nutrient-rich culture medium is driven only along surfaces of the scaffold), and a culture system in which nutrient-rich culture medium is forced through the whole construct.  
+They found that there is a two-fold improvement in cell viability from forced perfusion when compared to the other methods of nutrient delivery.  
+They were also able to obtain details of the microarchitecture of the pores within the scaffold via light microscopy, and developed a computational fluid dynamics model to examine the modulating effect of fluid shear stress on growth.
+%However, this model only dealt with shear stresses in two dimensions as only the cross-sections of the pores were modeled.
+Porter {\it et al.} \cite{porter2005} attempted to more accurately calculate the fluid stress in three dimensions by constructing pore microarchitecture using microcomputed tomography and using the Lattice-Boltzmann method to simulate fluid flow within the structure.  
+They found that shear stress levels leading to increased cell proliferation were lower than previously determined by Raimondi {\it et al.}\cite{raimondi2004}.\\
+\\
+These early studies tended to focus on isolated aspects of the problem.  
+While these analyses are very useful in improving knowledge about specific aspects of tissue growth, more recent models have moved closer to the goal of describing a tissue engineering construct in its entirety.  
+A typical method for modeling full systems involves examining the different constituent parts as separate domains, or phases.  
+For example, a two-phase model considers the cell population as one phase and the nutrient-rich culture medium as another phase, and considers the interactions between the two on a macroscopic level.  
+Furthermore, there are many ways that the phases can be modeled.  
+A simple example of this is how cell population can be considered via direct cell density or a change in scaffold permeability.
+Coletti {\it et al.} \cite{coletti2006} considered both changes in scaffold properties (due to cell proliferation) and nutrient transport via fluid flow in a three-dimensional perfusion bioreactor in their multi-phase model.  
+In this model, the flow external to the scaffold was governed by the Navier-Stokes equations, coupled with the Brinkman equations within the porous scaffold.  
+Oxygen uptake was modeled by Michaelis-Menton kinetics, and cell growth as a function of nutrient concentration by the Contois equation \cite{contois1959}.  
+Shakeel {\it et al.} \cite{shakeel2012} examined the effects of initial cell seeding density and scaffold pore structure on the resulting structure of the engineered tissue construct.  
+Chung {\it et al.} \cite{chung2007}, developed a three-layer model of cell proliferation, nutrient uptake, and culture medium circulation within a porous scaffold under perfusion, the scaffold itself being held between two fluid layers.  
+In subsequent work, Chung {\it et al.} \cite{chung2008} modeled only the scaffold layer, neglecting the two fluid layers, and were able to obtain the same results when compared to their earlier work.\\
+\\
+While the above models all deal with multiple phases, the cell phase was not explicitly modeled.  
+Instead, cells were considered as nutrient sinks and proliferation was modeled as a change of scaffold permeability and porosity.  
+In explicitly considering a cell phase, O'Dea {\it et al.} \cite{odea2008} were able to incorporate mechanotransductive effects, in particular considering the mechanical response of an imposed flow on the cell phase and predicting the resulting cell distribution.  
+This work was expanded in \cite{odea2009} to take explicit account of the scaffold and its interactions with the growing cells.  
+The authors derived a simplified model based on an assumption of slender bioreactor geometry (i.e. a long wavelength analysis), while in a related work Osborne {\it et al.} \cite{osborne2010} considered a finite element solution of the full system.\\
+\\
+Another mechanotransductive system that has been investigated is that of a cartilage or bone bioreactor within which the construct undergoes cyclic compression.  
+The rationale behind such mechanical loading is that it mimics the experience of cartilage/bone within a joint {\it in vivo} and should thus provide an ideal environment.  
+As cartilage is a relatively avascular tissue it poses a unique challenge to tissue engineers because without a defined vasculature delivery of nutrient to the entire scaffold is much more difficult.
+To deal with this difficulty, significant amounts of experimental and modeling work has been done over the last two decades to attempt to determine the best way to engineer cartilage.  
+Many facets of the cyclic loading appear to affect a very wide range of experimental outcomes, in ways that are not yet fully understood.  
+For example, Mauck {\it et al.} \cite{mauck2000} discovered that different types of scaffolds with differing stiffness and modulus can greatly affect the end result of an experiment.  
+The details of the ``loading protocol'' can also demonstrably affect experimental outcomes.  
+For example, Sch\"atti {\it et al.} \cite{schatti2011} compared different types of loading and found that only samples which had both shear and strain stresses applied showed a significant up-regulation of chondrogenic genetic markers.  
+Buschmann {\it et al.} \cite{buschmann1995} observed that chondrocytes responded to biosynthetically to static and dynamic loading in a manner similar to that of intact organ culture.  
+They saw a response to compression, though, more pronounced at later times in the experiments, and concluded that application of a mechanical load may significantly alter the long-term development of the tissue.\\
+\\
+Modeling and simulation of loading on the tissue engineering construct can provide significant insight into the effects that stress and/or strain plays in chondrocyte proliferation.  
+For example, Babalola and Bonassar \cite{babalola2009} simulated results using a 2D finite element method to determine which types of scaffolds work best in cartilage tissue growth; while Moo {\it et al.} \cite{moo2012} used a multi-scale model (accounting for chondrocytes and cartilage tissue) to examine the effect of impact loading on cell death in an attempt to determine the cause of higher cell death at higher strain.  
+Other aspects of chondrocyte growth have been modeled.  
+Catt {\it et al.} \cite{catt2011} examined the effects of extra-cellular matrix (ECM) production on chondrocyte growth and compared their results to experimental data.  
+They noted that cellular differentiation rates played a more significant role than did nutrient transport on chondrocyte levels.  
+Lutianov {\it et al.} \cite{lutianov2011} developed a model which indicated that a combination of stem cells (which can differentiate into chondrocytes) and chondrocytes produces the best results when compared to seeding with strictly stem cells or chondrocytes.  
+As there are many different aspects which can be and have been modeled, Sengers {\it et al.} \cite{sengers2007} compiled a review of the multitude of mathematical models used in tissue engineering, and the reader is directed there for a more comprehensive list.\\
+\\
+A challenge still facing tissue engineers is how to initially seed the porous scaffold with the appropriate distribution of cells to obtain a desired end result.  Even if the appropriate initial seeding distribution is known, it is not always possible to achieve this in the laboratory.  One way around this difficulty is to exploit  
+haptotaxis, in which cells move up gradients of a chemical that is bound to the scaffold.  
+Significant research has investigated the effects of scaffold surface modification, particularly as it relates to cell adhesion.  
+For example, Zelzer {\it et al.} \cite{zelzer2012} examined how adhesion protein adsorption combined with plasma polymerised surfaces affect cell adhesion (this paper also contains a useful overview of selected earlier work on scaffold surface modification).  
+As an alternative to adhesion proteins, great progress is being made with printing growth factors (or other biochemical signals) onto scaffolds \cite{campbell2005, cooper2010, ker2011, miller2006, miller2011}.  
+Printing growth factors onto biomaterial scaffolds offers significant advantages over allowing the growth factor to diffuse in the culture medium \cite{bussolino1992} since its spatial patterning is highly controllable.  
+Cells seeded on the scaffold respond haptotactically to gradients of the growth factor, and undergo enhanced proliferation where growth factor is present.  
+Campbell {\it et al.} \cite{campbell2005} and Miller {\it et al.} \cite{miller2006} examined the cellular response to patterned growth factor: both studies saw significantly higher cell densities in regions on which growth factor was bioprinted but, due to the growth-factor patterns used (in which concentration gradients were almost everywhere small), were unable to conclude with certainty whether haptotaxis might play a significant role (though they suspect it does not).  
+%There are two types of experimental modifications which motivate our paper.  The first is haptotaxis, which is directed cellular movement in response to an external influence, e.g. adhesion proteins on the substrate as is described above.  The second is chemotaxis, in which typically experimentalists include some sort of growth factor with the nutrient, diffused in the culture medium along with the nutrient, and helps aid in proliferation.  This paper addresses a combination of these effects, where we model affixing an agent to the scaffold as in typical haptotaxis.  Similarities exist between the model and chemotaxis in the sense that the agent affixed to the scaffold is a growth factor as is done in \cite{campbell2005, cooper2010, ker2011, miller2006, miller2011}.\\
+While much work has been done modeling cell motility and cell proliferation as it relates to tumor growth \cite{tao2011}, morphogenesis \cite{maini1989, oster1983, perelson1986}, and tumor-related angiogenesis \cite{orme1996}, these phenomena have yet to be fully considered from a tissue engineering perspective.\\
+\\
+In this paper a very versatile two-phase model is derived, with one phase the cells and the other the culture medium, describing cell proliferation and transport in a porous scaffold perfused with nutrient-rich culture medium (see the schematic in Figure~\ref{fig:domainpicture}).  
+The model domain consists of the rigid scaffold, with perfusion driven by upstream and downstream boundary conditions.  
+The fluid flow through the scaffold is governed by Darcy's law.  
+Cell density is monitored as proliferation occurs, and the effect of this on the flow is captured via a change in the scaffold permeability, which also changes the pore volume fraction.  
+Cells proliferate due to nutrient uptake, and increased cell proliferation at moderate levels of fluid shear stress is also taken into account while allowing for the possibility that excessive shear stress can reduce cell proliferation.  
+The model permits different nutrient basic types to be considered; for example, nutrients that become toxic in excess, and those that do not.  
+Nutrient is transported by advection and diffusion (we show advective transport to dominate in all relevant parameter regimes).  
+Cell proliferation due to nutrient uptake, and the nutrient uptake itself, are modeled by the same basic functional form, reflecting the assumption that the new cell mass created is proportional to the amount of nutrient consumed.  
+The cells move within the scaffold via cellular diffusion in response to overcrowding and a small advective velocity (proportional to the speed of the fluid flow; essentially, a fluid drag).  
+{\bf ***THE NEXT SENTENCE IS NEW***}
+The model is then extended in three ways: a haptotactic component is added to the cellular flux to model the effect of a non-diffusible growth factor bound to the scaffold (growth factor enhanced proliferation \cite{miller2006} is addressed by a supplemental growth term in the same equation); the natural cellular death rate, assumed constant at first, is modified to be a function of local fluid flow (the reasons for which are discussed later); and a two time scale analysis is done to examine the long time effects of a short time cyclic compression on the scaffold.\\
+\\
+The paper is laid out as follows.  
+
