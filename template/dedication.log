@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  5 APR 2021 00:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  5 APR 2021 00:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -20,49 +20,29 @@ You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (52.16704pt too wide) in paragraph at lines 17--17
+Overfull \hbox (52.16704pt too wide) in paragraph at lines 27--27
 []\OT1/cmtt/m/n/10 A wonderful teacher of life sciences who also teaches about life.[] 
  []
 
 
-Overfull \hbox (15.41736pt too wide) in paragraph at lines 17--17
+Overfull \hbox (15.41736pt too wide) in paragraph at lines 27--27
 []\OT1/cmtt/m/n/10 One of the smartest engineers I have met in this lifetime.[] 
  []
 
 
-Overfull \hbox (20.66731pt too wide) in paragraph at lines 17--17
+Overfull \hbox (20.66731pt too wide) in paragraph at lines 27--27
 []\OT1/cmtt/m/n/10 When my time comes we shall catch some films in heaven but,[] 
  []
 
 
-Overfull \hbox (10.1674pt too wide) in paragraph at lines 17--17
+Overfull \hbox (10.1674pt too wide) in paragraph at lines 27--27
 []\OT1/cmtt/m/n/10 until then I need your quirky advices and your blessings.[] 
  []
 
-Missing character: There is no - in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no h in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
-Missing character: There is no S in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no v in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no g in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no m in font nullfont!
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 33.
+(Font)              <7> on input line 30.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 33.
+(Font)              <5> on input line 30.
 )
 ! Emergency stop.
 <*> dedication.tex
@@ -77,5 +57,5 @@ Here is how much of TeX's memory you used:
  16014 multiletter control sequences out of 15000+600000
  532506 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 20i,3n,18p,82b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 20i,3n,18p,82b,203s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
