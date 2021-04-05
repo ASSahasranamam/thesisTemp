@@ -1,6 +1,10 @@
 \documentclass[12pt]{thesis}
 %\usepackage{psfig} % Commented by Shoubhik Mondal, 2014. I like graphicx package
 \usepackage{graphicx} % Added by Shoubhik Mondal, 2014.
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\usepackage{lscape}
+\usepackage{longtable}
 
 %%%%%%%%%%%%%%%% May need to offset for a specific printer %%%%%%%%%%%%%%%%%%%
 %\hoffset = 0.0625in
@@ -64,8 +68,9 @@
 \startbody
 
 %% Introduction
-\input{chapter}
-			
+\input{introduction}
+\input{background.tex}
+
 % APPENDICES
 \appendix
 \input{appendix}

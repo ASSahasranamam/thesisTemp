@@ -1,6 +1,7 @@
-\contentsline {chapter}{\numberline {1}\MakeUppercase {INTRODUCTION}}{1}
-\contentsline {section}{\numberline {1.1}BibT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m \ Style File}{1}
-\contentsline {section}{\numberline {1.2}Example Section With Figure}{1}
-\contentsline {subsection}{\numberline {1.2.1}Example Subsection With Table}{3}
-\contentsline {chapter}{\numberline {APPENDIX\nobreakspace {}A}\hspace *{0.95in}\MakeUppercase {CELL SIGNALING SITES \& PROTEIN DATABASES}}{4}
-\contentsline {chapter}{BIBLIOGRAPHY}{5}
+\contentsline {chapter}{\numberline {1}\MakeUppercase {INTRODUCTION}}{1}%
+\contentsline {section}{\numberline {1.1}Bib\TeX \ Style File}{1}%
+\contentsline {chapter}{\numberline {2}\MakeUppercase {chapter name}}{5}%
+\contentsline {section}{\numberline {2.1} The Innate Immune System. }{5}%
+\contentsline {section}{\numberline {2.2} Toll-Like Receptors }{6}%
+\contentsline {chapter}{\numberline {APPENDIX\nobreakspace {}A}\hspace *{0.95in}\MakeUppercase {CELL SIGNALING SITES \& PROTEIN DATABASES}}{11}%
+\contentsline {chapter}{BIBLIOGRAPHY}{12}%
