@@ -1,4 +1,4 @@
-% !TEX program = xelatex
+% !TEX program = lualatex
 
 
 \documentclass[12pt]{thesis}
@@ -8,7 +8,7 @@
 % \usepackage{graphicx}
 \usepackage{lscape}
 \usepackage{longtable}
-\usepackage[smartEllipses]{markdown}
+\usepackage[hashEnumerators,smartEllipses]{markdown}
 
 %%%%%%%%%%%%%%%% May need to offset for a specific printer %%%%%%%%%%%%%%%%%%%
 %\hoffset = 0.0625in
@@ -73,9 +73,11 @@
 
 %% Introduction
 \input{introduction}
+
+\input{tb1.tex}
 \input{background}
 \input{chapter5}
-\input{tb1}
+
 % APPENDICES
 \appendix
 \input{appendix}
@@ -85,4 +87,5 @@
 \bibliography{references}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \end{document}

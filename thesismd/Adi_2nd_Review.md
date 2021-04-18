@@ -199,7 +199,6 @@ While the etiology or pathophysiology of PICS has not been completely elucidated
 | Organ Dysfunction | A significant change in the SOFA score by at least two points at a site remote from infection, |
 | Septic Shock | A state of sepsis that elicits a cascade of profound changes in the vasculature, metabolism, cellular, and organ functions. |
 | PICS |  |
-<br>
 | Critically ill patient | Admission to the ICU > 14 days |
 | ---------------------- | ------------------------------ |
 | Persistent inflammation | CRP > 50 μg/dL |
@@ -208,7 +207,6 @@ While the etiology or pathophysiology of PICS has not been completely elucidated
 | Catabolic state | Serum albumin < 3.0 g/dL |
 |  | Creatinine height index < 80% |
 |  | Weight loss > 10% ‘or’ BMI < 18 during hospitalization |
-<br>
 |  |  |
 | :--- | :--- |
 
